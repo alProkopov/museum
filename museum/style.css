@@ -17,13 +17,31 @@ html{
     list-style: none;
     font-size: 22px;
 }
+
+html,
 body{
+    position: relative;
     margin: 0;
     font-family: var(--font-family-roboto) ;
 }
 
+ul,
+ul li,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: none;
+
+}
 
 .container{
+  position: relative;
     margin: 0 auto;
     max-width: 1440px;
 }
@@ -32,16 +50,18 @@ body{
 .page-header{
     background: var(--bg-dark);
 }
+
 .header-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 50px 0;
 }
 .logo{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #ffffff;
+    gap: 25px;
 
 }
 .logo-icon{
@@ -51,7 +71,8 @@ body{
 }
 
 .logo-title{
-    padding-left: 25px;
+    margin-top: 10px;
+    padding: 6px 1px;
     font-family: Forum, cursive;
     font-style: normal;
     font-weight: normal;
@@ -71,13 +92,14 @@ body{
 
 .nav-list{
     display: flex;
-    max-width: 720px;
     line-height: 26px;
+    gap: 55px;
+
 }
 .nav-item{
-    padding-right: 55px;
+
     text-decoration: none;
-    padding-left: 25px;
+
     line-height: 26px;
 }
 
@@ -86,7 +108,7 @@ body{
     font-style: normal;
     font-weight: 200;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 50px;
     letter-spacing: 2px;
     text-decoration: none;
     color: #ffffff;
@@ -99,4 +121,153 @@ body{
     color: #7E6C51 ;
 }
 
+/* sections */
 
+
+.dark-section{
+    background-color: #030303;
+    color: white;
+}
+.section-title{
+    font-family: Forum, cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 112%;
+    padding: 16px 0;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.welcome-container{
+  position: relative;
+  z-index: 4;
+}
+.welcome-section-title{
+  padding-top: 150px;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 6;
+}
+.welcome-section-text{
+    padding: 7px 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    position: relative;
+  z-index: 6;
+}
+
+.welcome-button{
+  font-family: Roboto;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 22px;
+ line-height: 26px;
+ letter-spacing: 2px;
+  padding: 24px 69px;
+  margin: 76px 0 272px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #710707;
+  color: #ffffff;
+
+}
+.slider{
+  display: flex;
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  top: 0%;
+  z-index: 5;
+}
+.slider1{
+  max-width: 1000px ;
+  position: relative;
+  left: px;
+  overflow: hidden;
+
+}
+.slider-list{
+  display: flex;
+  width: 100%;
+  position: relative;
+  right: 0;
+  transition: all ease 1s;
+
+}
+
+.slider-item{
+  margin:0;
+  padding: 0;
+}
+
+.slider-item.active {
+  display: block;
+}
+
+
+.slider-panel{
+  position: absolute;
+  display: flex;
+  gap: 55px;
+  width: 600px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #030303;
+
+
+    right: 0px;
+    bottom: 0%;
+
+
+}
+.slider-arrow{
+  padding: 0;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.slider-number{
+  display: flex;
+  gap: 10px;
+}
+.slider-buttons-list{
+  display: flex;
+  gap: 25px
+}
+
+.slider-button{
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 5;
+}
+
+.slider-button.active {
+  background-color: var(--font-gold);
+}
+.slider-arrow{
+  padding-bottom: 5px;
+}
+
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+          box-shadow: 14px -5px 30px -10px rgba(0, 0, 0, 0.2) inset;
+  background: linear-gradient(90deg, black 0%, rgba(255, 255, 255, 0) 50%);
+  top: 0;
+  left: 0;
+}
