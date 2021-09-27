@@ -196,15 +196,121 @@
             <p class="video-section-text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
           </div>
 
+          <div class="video-player">
+
+            <div class="video-content">
+              <video controls src="/museum/assets/video/video0.mp4" poster="/museum/assets/video/poster0.jpg"></video>
+
+            </div>
+
+            <button class="video-play">
+              <img src="/museum/assets/img/video/video-play.png" alt="PlayVideo">
+            </button>
+
+
+            <div class="video-controls">
+
+              <button class="video-controls-button video-play-button">
+                <img src="/museum/assets/svg/video-play.svg" alt="video-play-button">
+              </button>
+
+              <input  class="video-progress video-progress-time" type="range" value="40" min="0" max="100" step="0.5">
+
+              <button class="video-controls-button video-speaker-button">
+                <img src="/museum/assets/svg/video-speaker.svg" alt="video-speaker-button">
+              </button>
+
+              <input  class="video-progress video-progress-volume" type="range" value="40" min="0" max="100" step="0.5">
+
+              <button class="video-controls-button video-fullscreen-button">
+                <img src="/museum/assets/svg/video-fullscreen-button.svg" alt="video-fullscreen-button">
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="video-container-list">
+
+            <div class="video-container-item">
+              <iframe width="452" height="254" loading="lazy" src="https://www.youtube.com/embed/Vi5D6FKhRmo"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+            </div>
+
+            <div class="video-container-item">
+              <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+            </div>
+
+            <div class="video-container-item">
+              <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+            </div>
+
+          </div>
+
+          <div class="video-slider">
+
+
+
+
+
+                <button class="slider-arrow-light slider-arrow-prev "><img src="/museum/assets/svg/arrow-prev-light.svg" alt="prevArrow"></button>
+
+                <ul class="slider-buttons-list-light">
+                  <li class="slider-button-light slider-button1 active"></li>
+                  <li class="slider-button-light slider-button2"></li>
+                  <li class="slider-button-light slider-button3"></li>
+                  <li class="slider-button-light slider-button4"></li>
+                  <li class="slider-button-light slider-button5"></li>
+                </ul>
+
+                <button class="slider-arrow-light slider-arrow-next"><img src="/museum/assets/svg/arrow-next-light.svg" alt="nextArrow"></button>
+
+
+
+
+
+            </div>
+
+
+          </div>
         </div>
     </section>
 
 
 
 
-    <section class="section, light-section, gallery-section">
-        <div class="container section-container gallery-container"></div>
+    <section class="section dark-section gallery-section">
+        <div class="container section-container gallery-container">
+
+            <h2 class="section-title  galary-section-title">Art Gallery</h2>
+
+            <div class="gallery-picture-container">
+              <div class="gallery-picture-inner-container">
+                <img src="/museum/assets/img/galery/galery1.jpg" alt="galery1" class="gallery-picture down">
+                <img src="/museum/assets/img/galery/galery2.jpg" alt="galery2" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery3.jpg" alt="galery3" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery4.jpg" alt="galery4" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery5.jpg" alt="galery5" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery6.jpg" alt="galery6" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery7.jpg" alt="galery7" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery8.jpg" alt="galery8" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery9.jpg" alt="galery9" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery10.jpg" alt="galery10" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery11.jpg" alt="galery11" class="gallery-picture down">
+                <img src="/museum/assets/img/galery/galery12.jpg" alt="galery12" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery13.jpg" alt="galery13" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery14.jpg" alt="galery14" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery15.jpg" alt="galery15" class="gallery-picture">
+              </div>
+            </div>
+
+
+        </div>
     </section>
+
+
+
+
+
     <section class="section, dark-section, tickets-section">
         <div class="container section-container tickets-container"></div>
     </section>
@@ -212,7 +318,10 @@
         <div class="container section-container contacts-container"></div>
     </section>
 </main>
-<footer></footer>
+<footer>
+
+
+</footer>
 <script src="app.js"></script>
 </body>
 </html>
