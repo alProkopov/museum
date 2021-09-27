@@ -285,21 +285,21 @@
 
             <div class="gallery-picture-container">
               <div class="gallery-picture-inner-container">
-                <img src="/museum/assets/img/galery/galery1.jpg" alt="galery1" class="gallery-picture down">
-                <img src="/museum/assets/img/galery/galery2.jpg" alt="galery2" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery3.jpg" alt="galery3" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery4.jpg" alt="galery4" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery5.jpg" alt="galery5" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery6.jpg" alt="galery6" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery7.jpg" alt="galery7" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery8.jpg" alt="galery8" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery9.jpg" alt="galery9" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery10.jpg" alt="galery10" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery11.jpg" alt="galery11" class="gallery-picture down">
-                <img src="/museum/assets/img/galery/galery12.jpg" alt="galery12" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery13.jpg" alt="galery13" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery14.jpg" alt="galery14" class="gallery-picture">
-                <img src="/museum/assets/img/galery/galery15.jpg" alt="galery15" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery1.jpg" alt="gallery1" class="gallery-picture down">
+                <img src="/museum/assets/img/galery/galery2.jpg" alt="gallery2" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery3.jpg" alt="gallery3" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery4.jpg" alt="gallery4" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery5.jpg" alt="gallery5" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery6.jpg" alt="gallery6" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery7.jpg" alt="gallery7" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery8.jpg" alt="gallery8" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery9.jpg" alt="gallery9" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery10.jpg" alt="gallery10" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery11.jpg" alt="gallery11" class="gallery-picture down">
+                <img src="/museum/assets/img/galery/galery12.jpg" alt="gallery12" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery13.jpg" alt="gallery13" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery14.jpg" alt="gallery14" class="gallery-picture">
+                <img src="/museum/assets/img/galery/galery15.jpg" alt="gallery15" class="gallery-picture">
               </div>
             </div>
 
@@ -309,11 +309,83 @@
 
 
 
+    <section class="section, light-section, tickets-section">
+        <div class="container section-container tickets-container">
+
+          <div class="section-text-container visiting-text-container">
+            <h2 class="section-title underline-title light-section-title visiting-section-title">Buy tickets</h2>
+          </div>
+
+        <div class="tickets-content">
+
+          <div class="ticket-type-container">
+            <img src="/museum/assets/img/tickets/ticket-info.jpg" alt="painting">
+            <div class="ticket-type">
+              <p>Ticket Type</p>
+              <div class="ticket-type-items">
+
+                <div class="ticket-type-item">
+								  <input type="radio" id="permanent" name="ticket-type" value="permanent">
+							  	<label for="permanent">Permanent exhibition</label>
+						  	</div>
+
+                <div class="ticket-type-item">
+								  <input type="radio" id="temporary" name="ticket-type" value="temporary">
+								  <label for="temporary">Temporary exhibition</label>
+							  </div>
+
+                <div class="ticket-type-item">
+								  <input type="radio" id="combined" name="ticket-type" value="combined">
+								  <label for="combined">Combined Admission</label>
+							  </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="amount-container">
+                <p class="amount-text">Amount</p>
+
+                <div class="amount-item amount-item1">
+                  <p class="amount-tickets-age">Basic 18+</p>
+                  <div class="amount-button">
+                    <button class="amount-button-minus" type="button" onclick="this.nextElementSibling.stepDown()" >—</button>
+								    <input class="amount-value" type="number" min="0" max="20" value="1" readonly>
+								    <button class="amount-button-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+						  	</div>
+
+                <div class="amount-item amount-item2">
+                  <p class="amount-tickets-age">Senior 65+</p>
+                  <div class="amount-button">
+                    <button class="amount-button-minus" type="button" onclick="this.nextElementSibling.stepDown()">—</button>
+								    <input class="amount-value" type="number" min="0" max="20" value="1" readonly>
+								    <button class="amount-button-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+						  	</div>
+
+                <p class="amount-total">Total € 220</p>
+
+                <button class="tickets-buy">Buy Now</button>
 
 
-    <section class="section, dark-section, tickets-section">
-        <div class="container section-container tickets-container"></div>
+
+
+
+
+
+          </div>
+
+          </div>
+        </div>
+
+        </div>
     </section>
+
+
+
+
+
     <section class="section, light-section, contacts-section">
         <div class="container section-container contacts-container"></div>
     </section>
