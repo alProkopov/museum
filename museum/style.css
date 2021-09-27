@@ -10,6 +10,7 @@
 }
 html{
     scroll-behavior: smooth;
+
 }
 
 *{
@@ -209,8 +210,19 @@ a{
   background-color: #710707;
   color: #ffffff;
   cursor: pointer;
-
 }
+
+
+
+.welcome-button:hover{
+  background-color: var(--font-gold) ;
+  transition: 0.4s;
+}
+.welcome-button:active{
+  background-color: #7E6C51 ;
+}
+
+
 .slider{
   display: flex;
   position: absolute;
@@ -237,9 +249,6 @@ a{
 
 }
 
-.slider-item{
-
-}
 
 .slider-item.active {
   display: block;
@@ -289,12 +298,29 @@ a{
   padding: 5;
 }
 
+.slider-button:hover{
+  background-color: var(--font-gold) ;
+  transition: 0.4s;
+}
+.slider-button:active{
+  background-color: #7E6C51 ;
+}
+
 .slider-button.active {
   background-color: var(--font-gold);
 }
 .slider-arrow{
   padding-bottom: 5px;
 }
+
+.slider-arrow:hover{
+  filter: brightness(40%) ;
+  transition: 0.4s;
+}
+.slider-arrow:active{
+  filter: brightness(20%) ;
+}
+
 
 .shadow {
   position: absolute;
@@ -517,9 +543,18 @@ overflow: hidden;
   transition: 0.2s;
 }
 
+.video-play:hover{
+  filter: brightness(70%) ;
+  transition: 0.4s;
+
+}
+
 .video-play:active{
   transform: translate(-50%, -50%) scale(0.8);
+  filter: brightness(20%) ;
 }
+
+
 
 
 
@@ -650,7 +685,7 @@ overflow: hidden;
 }
 
 .slider-arrow-light:hover{
-  background-color: #710707 ;
+  filter: brightness(60%);
 
 }
 
@@ -819,6 +854,7 @@ line-height: 37px;
 /* identical to box height */
 
 text-align: center;
+cursor: pointer;
 
 color: #000000;
 }
@@ -859,8 +895,17 @@ line-height: 26px;
 align-items: center;
 text-align: center;
 letter-spacing: 2px;
-
+cursor: pointer;
 color: #ffffff;
+border-radius: 2px;
+border: none;
+  }
+
+  .tickets-buy:hover{
+    color: black;
+    background-color: #9D8665;
+    transition: 0.3s;
+
   }
 
 
@@ -1054,9 +1099,9 @@ color: #FFFFFF;
 
 .booking-form {
   position: fixed;
-  left: 100%;
+  right: 100%;
   top: 50%;
-  transform: translateX(+50%);
+  transform: translateY(-50%);
   width: 1440px;
   height: 845px;
   padding: 91px 235px;
@@ -1069,8 +1114,8 @@ color: #FFFFFF;
 .booking-form-active {
   position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 .booking-form__closeButton {
@@ -1449,7 +1494,7 @@ color: #FFFFFF;
   justify-content: center;
   background: #030303;
   color: #ffffff;
-  ;
+  cursor: pointer;
 }
 
 .booking-form__right {
@@ -1733,15 +1778,17 @@ color: #FFFFFF;
 
 .button__ripple {
   background-position: center;
-  transition: background 0.8s;
+  transition:  0.8s;
+  border: none;
+  cursor: pointer;
 }
 
 .button__ripple:hover {
-  background: #8d0909 radial-gradient(circle, transparent 1%, #8d0909 1%) center/15000%;
+  filter: brightness(70%);
+  transition: 0.3s;
 }
 
 .button__ripple:active {
-  background-color: #f30606;
-  background-size: 100%;
-  transition: background 0s;
+  filter: brightness(50%);
+  transition: 0.3s;
 }
