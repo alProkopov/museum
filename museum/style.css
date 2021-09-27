@@ -867,3 +867,31 @@ color: #ffffff;
   background-size: cover;
   background-attachment: fixed;
 }
+
+
+.contacts-content-block{
+  display: flex;
+  padding-top: inherit;
+  justify-content: space-between;
+}
+
+.contacts-text-content h2{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  padding-bottom: 50px;
+}
+
+.contacts-text-content p{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+/* identical to box height */
+color: #000000;
+padding-bottom: 25px;
+}
