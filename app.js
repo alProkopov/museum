@@ -114,3 +114,6 @@ bookingOverlay.addEventListener('click', function() {
   bookingWindow.classList.remove('booking-form-active')
   bookingOverlay.classList.remove('booking-form__overlay-active')
 })
+
+
+

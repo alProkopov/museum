@@ -702,6 +702,8 @@ overflow: hidden;
     position: relative;
     height: 2125px;
     overflow-y: hidden;
+    transition: all 1s ease-out;
+
   }
 
   .gallery-picture-container::after {
@@ -714,6 +716,9 @@ overflow: hidden;
 180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 
 }
+.gallery-picture{
+  transition: 1s
+}
 
   .gallery-picture-inner-container{
     width: 100%;
@@ -723,6 +728,15 @@ overflow: hidden;
 
     flex-wrap: wrap;
     gap: 24px 36px;
+    transition: all 1s ease-out;
+  }
+
+  .gallery-picture-inner-container img:nth-child(1){
+    margin-top: 50px;
+  }
+  .gallery-picture-inner-container img:nth-child(11){
+    margin-top: 50px;
+
   }
 
 
@@ -731,9 +745,7 @@ overflow: hidden;
     width: 456px;
   }
 
-  .gallery-picture.down{
-    margin-top: 50px;
-  }
+
 
 
   .tickets-content{
@@ -787,11 +799,11 @@ overflow: hidden;
   width: 17px;
   height: 17px;
   padding-left: 25px;
-  background: url(/museum//assets/img/tickets/radio.svg) 0 0 no-repeat;
+  background: url(/assets/img/tickets/radio.svg) 0 0 no-repeat;
   }
 
   .ticket-type-item input:checked + label:before {
-    background: url(/museum/assets/img/tickets/radio-checked.png) 0 0 no-repeat;
+    background: url(/assets/img/tickets/radio-checked.png) 0 0 no-repeat;
   }
 
 
@@ -920,7 +932,7 @@ border: none;
 .parallax{
   width: 100%;
   height: 400px;
-  background-image: url(/museum/assets/img/parallax.jpg);
+  background-image: url(/assets/img/parallax.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1199,41 +1211,41 @@ color: #FFFFFF;
 }
 
 .booking-form__date-wrapper::before {
-  background: url(/museum/assets/img/tickets/date.svg);
+  background: url(/assets/img/tickets/date.svg);
   background-repeat: no-repeat;
   background-size: 100%
 
 }
 
 .booking-form__time-wrapper:before {
-  background: url(/museum/assets/img/tickets/time.svg);
+  background: url(/assets/img/tickets/time.svg);
   background-repeat: no-repeat;
 
 }
 
 .booking-form__name-wrapper::before {
 
-  background: url(/museum/assets/img/tickets/name.svg);
+  background: url(/assets/img/tickets/name.svg);
   background-repeat: no-repeat;
 
 }
 
 .booking-form__email-wrapper::before {
 
-  background: url(/museum/assets/img/tickets/email.svg);
+  background: url(/assets/img/tickets/email.svg);
   background-repeat: no-repeat;
 
 }
 
 .booking-form__tel-wrapper::before {
 
-  background: url(/museum/assets/img/tickets/phone.svg);
+  background: url(/assets/img/tickets/phone.svg);
   background-repeat: no-repeat;
 
 }
 
 .booking-form__select-wrapper::before {
-  background: url(/museum/assets/img/tickets/Ticket-type.svg);
+  background: url(/assets/img/tickets/Ticket-type.svg);
   background-repeat: no-repeat;
 }
 
@@ -1248,7 +1260,7 @@ color: #FFFFFF;
 .booking-form__date::-webkit-calendar-picker-indicator, .booking-form__time::-webkit-calendar-picker-indicator {
   width: 45px;
   background-color: #ffffff;
-  background: url(/museum/assets/img/tickets/arrow.jpg) 20px center no-repeat;
+  background: url(/assets/img/tickets/arrow.jpg) 20px center no-repeat;
   cursor: pointer;
 }
 
@@ -1308,7 +1320,7 @@ color: #FFFFFF;
 
 .select-selected:after {
   position: absolute;
-  content: url(/museum/assets/img/tickets/arrow.jpg);
+  content: url(/assets/img/tickets/arrow.jpg);
   top: 14px;
   right: 14px;
   width: 17px;
@@ -1511,7 +1523,7 @@ color: #FFFFFF;
   margin-bottom: -15px;
   width: 470px;
   /* height: 151px; */
-  background: url(/museum/assets/img/tickets/louvre.jpg) top right no-repeat;
+  background: url(/assets/img/tickets/louvre.jpg) top right no-repeat;
 }
 
 .booking-form__overview-header {
@@ -1552,16 +1564,16 @@ color: #FFFFFF;
 
 .booking-form__overview-date {
   margin-bottom: 5px;
-  background: url(/museum/assets/img/tickets/date.svg) left center no-repeat;
+  background: url(/assets/img/tickets/date.svg) left center no-repeat;
 }
 
 .booking-form__overview-time {
   margin-bottom: 5px;
-  background: url(/museum/assets/img/tickets/time.svg) left center no-repeat;
+  background: url(/assets/img/tickets/time.svg) left center no-repeat;
 }
 
 .booking-form__overview-type {
-  background: url(/museum/assets/img/tickets/temprorary.svg) left center no-repeat;
+  background: url(/assets/img/tickets/temprorary.svg) left center no-repeat;
 }
 
 .booking-form__totallist {
