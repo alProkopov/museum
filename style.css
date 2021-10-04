@@ -193,7 +193,8 @@ a{
 
 .welcome-button{
   margin-top: 75px;
-
+  position: relative;
+  z-index: 6;
   font-family: Roboto;
  font-style: normal;
  font-weight: 300;
@@ -435,6 +436,7 @@ line-height: 21px;
   display: flex;
 
   gap: 60px;
+
 }
 
 .explore-section-title{
@@ -717,7 +719,8 @@ overflow: hidden;
 
 }
 .gallery-picture{
-  transition: 1s
+  transition: 1s;
+  width: 33.3333%;
 }
 
   .gallery-picture-inner-container{
@@ -741,9 +744,7 @@ overflow: hidden;
 
 
 
-  .gallery-picture{
-    width: 456px;
-  }
+
 
 
 
@@ -759,6 +760,10 @@ overflow: hidden;
     display: flex;
 
     gap: 60px;
+  }
+  .ticket-type-container img{
+    width: 100%;
+    height: auto;
   }
 
   .ticket-type p{
@@ -1803,4 +1808,127 @@ color: #FFFFFF;
 .button__ripple:active {
   filter: brightness(50%);
   transition: 0.3s;
+}
+
+
+
+@media (max-width: 1024px) {
+  /* welcome */
+  .container {
+    max-width: calc(100% - 40px);
+  }
+  .section-container{
+    padding: 60px 0;
+  }
+  .section-title{
+    font-size: 50px;
+  }
+  .welcome-container{
+    height: 585px;
+  }
+  .welcome-section-title{
+    font-size: 50px;
+    line-height: 90px;
+    padding-bottom: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 50px;
+  }
+  .welcome-button{
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    margin-top: 50px;
+  }
+  .welcome-section-text{
+    font-size: 24px;
+  }
+  .slider-image{
+    width: 700px;
+    height: 525px;
+  }
+  .slider1{
+    max-width: 700px;
+  }
+  .slider-panel {
+    width: 700px;
+
+}
+
+
+.explore-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.video-container-list iframe{
+  height: 170px;
+}
+.gallery-picture-container{
+  height: 1265px;
+}
+.gallery-picture-inner-container{
+  height: 1700px;
+}
+
+.gallery-container{
+  padding-bottom: 0px;
+}
+.ticket-type{
+  display: none;
+}
+
+.footer-container{
+  padding: 60px 20px 50px;
+}
+.footer-logo{
+  padding-right: 45px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: calc(100% - 40px);
+  }
+  .section-container{
+    padding: 40px 0;
+  }
+  .welcome-button{
+    background-color: black;
+    display: none;
+  }
+  .welcome-container{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
+
+
+
+@media (max-width: 420px) {
+  .container {
+    max-width: calc(100% - 40px);
+  }
+  .section-container{
+    padding: 40px 0;
+  }
 }
