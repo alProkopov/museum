@@ -173,6 +173,7 @@ a{
   height: 810px ;
 }
 .welcome-section-title{
+  display: inline-block;
   padding-top: 150px;
   margin-bottom: 5px;
   position: relative;
@@ -249,11 +250,12 @@ a{
   margin-bottom: 60px ;
 
 }
-
-
-.slider-item.active {
-  display: block;
+.slider-item{
+  position: relative;
+  cursor: pointer;
 }
+
+
 
 
 .slider-panel{
@@ -286,28 +288,40 @@ a{
   display: flex;
   gap: 10px;
 }
-.slider-buttons-list{
+/* .slider-buttons-list,  */
+.slick-dots{
   display: flex;
   gap: 25px
 }
 
-.slider-button{
+.slick-dots li{
+  list-style: none;
+  font-size: 0;
+}
+
+.slider-button,
+.slick-dots button{
   width: 16px;
   height: 16px;
   background-color: #ffffff;
   cursor: pointer;
-  padding: 5;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+  font-size: 0;
+  border: 0;
+
 }
 
-.slider-button:hover{
+.slick-dots button:hover{
   background-color: var(--font-gold) ;
   transition: 0.4s;
 }
-.slider-button:active{
+.slick-active button:active{
   background-color: #7E6C51 ;
 }
 
-.slider-button.active {
+.slick-active button{
   background-color: var(--font-gold);
 }
 .slider-arrow{
@@ -325,7 +339,7 @@ a{
 
 .shadow {
   position: absolute;
-  width: 100%;
+  width: 40%;
   height: 100%;
           box-shadow: 14px -5px 30px -10px rgba(0, 0, 0, 0.2) inset;
   background: linear-gradient(90deg, black 0%, rgba(255, 255, 255, 0) 50%);
@@ -1931,4 +1945,11 @@ color: #FFFFFF;
   .section-container{
     padding: 40px 0;
   }
+}
+
+
+
+
+.slick-track{
+  display: flex;
 }
