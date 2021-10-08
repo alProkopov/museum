@@ -488,10 +488,44 @@ line-height: 38px;
 .explore-img-container{
   position: relative;
 }
+.explore-slider-container{
+  /* align-self: flex-start; */
+  min-width: 720px;
+    min-height: 700px;
+}
+.img-comp-img{
+  position: absolute;
+
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.img-comp-img img {
+  /* display: block; */
+  vertical-align: middle;
+}
+.img-comp-slider {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+
+
+
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+
+  background-image: url('/assets/img/explore-slider/exploreSlider.png');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 1600px;
+  opacity: 0.7;
+  /* border-radius: 50%; */
+}
 .explore-slider{
   position: absolute;
   top: 0;
-  right: 265px;
+  right: 0;
 }
 
 
@@ -745,12 +779,12 @@ order: 2;
 }
 .gallery-picture{
   transition: 1s;
-  width: 33.3333%;
+
 }
 
   .gallery-picture-inner-container{
     width: 100%;
-    height: 2975px;
+    height: 3000px;
     display: flex;
     flex-direction: column;
 
@@ -996,7 +1030,9 @@ padding-bottom: 25px;
 }
 
 
-
+footer{
+  background-color: #030303;
+}
 .foot{
   position: relative;
   display: flex;
@@ -1006,6 +1042,8 @@ padding-bottom: 25px;
 .footer-container{
   padding: 85px 240px 50px;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 
 }
 
@@ -1081,7 +1119,7 @@ padding-bottom: 25px;
 
 
 .footer-line{
-  width: 100vw;
+  width: 100%;
     height: 3px;
     background-color: #666666;
 }
@@ -1893,14 +1931,19 @@ color: #FFFFFF;
   height: 170px;
 }
 .gallery-picture-container{
-  height: 1265px;
+  height: 2125px;
+  overflow: hidden;
+
 }
 .gallery-picture-inner-container{
-  height: 1700px;
+  height: 3000px;
+  overflow: hidden;
+
 }
 
 .gallery-container{
   padding-bottom: 0px;
+  overflow: hidden;
 }
 .ticket-type{
   display: none;
@@ -1926,7 +1969,7 @@ color: #FFFFFF;
 
 
 
-
+/*
 @media (max-width: 768px) {
   .container {
     max-width: calc(100% - 40px);
@@ -1956,7 +1999,7 @@ color: #FFFFFF;
   .section-container{
     padding: 40px 0;
   }
-}
+} */
 
 
 

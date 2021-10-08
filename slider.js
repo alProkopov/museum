@@ -25,6 +25,9 @@ $('.video-content').slick({
   arrows: false,
   fade: true,
   asNavFor: '.video-container-list'
+
+
+
 });
 $('.video-container-list').slick({
   slidesToShow: 3,
@@ -43,4 +46,17 @@ $('.video-container-list').slick({
     dots: true,
     // appendDots:$(this).siblings('.slider-buttons-list')
             appendDots:'.video-slider'
+
+
+});
+
+
+
+$('.video-content').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  
+  $("video").each(function(){
+    $(this).get(0).pause();
+  });
+
+
 });
