@@ -53,7 +53,7 @@ $('.video-container-list').slick({
 
 
 $('.video-content').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  
+  console.log(video);
   $("video").each(function(){
     $(this).get(0).pause();
   });

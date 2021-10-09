@@ -203,7 +203,7 @@
 
 
 
-     <section class="section light-section video-section" id="video">
+      <section class="section light-section video-section" id="video">
         <div class="container section-container video-container">
 
           <div class="section-text-container video-text-container">
@@ -214,11 +214,11 @@
           <div class="video-player">
 
             <div class="video-content">
-              <video controls src="/assets/video/video0.mp4" poster="/assets/video/poster0.jpg"></video>
-              <video controls src="/assets/video/video1.mp4" poster="/assets/video/poster1.jpg"></video>
-              <video controls src="/assets/video/video2.mp4" poster="/assets/video/poster2.jpg"></video>
-              <video controls src="/assets/video/video3.mp4" poster="/assets/video/poster3.jpg"></video>
-              <video controls src="/assets/video/video4.mp4" poster="/assets/video/poster4.jpg"></video>
+              <video  src="/assets/video/video0.mp4" poster="/assets/video/poster0.jpg"></video>
+              <video  src="/assets/video/video1.mp4" poster="/assets/video/poster1.jpg"></video>
+              <video  src="/assets/video/video2.mp4" poster="/assets/video/poster2.jpg"></video>
+              <video  src="/assets/video/video3.mp4" poster="/assets/video/poster3.jpg"></video>
+              <video  src="/assets/video/video4.mp4" poster="/assets/video/poster4.jpg"></video>
 
             </div>
 
@@ -229,20 +229,25 @@
 
             <div class="video-controls">
 
-              <button class="video-controls-button video-play-button">
-                <img src="/assets/svg/video-play.svg" alt="video-play-button">
+              <button class="video-controls-button video-play-button toggle">
+                <img class="video-play-button-play"  src="/assets/svg/video-play.svg" alt="video-play-button video-play-button-play">
+                <img class="video-play-button-pause" style="display: none;" src="/assets/svg/video-pause.svg" alt="video-play-button video-play-button-pause toggle">
+
               </button>
 
-              <input  class="video-progress video-progress-time" type="range" value="40" min="0" max="100" step="0.5">
+              <input  class="video-progress video-progress-time slider-progress" name="currentTime" type="range" value="0" min="0" max="100" step="0.001">
 
               <button class="video-controls-button video-speaker-button">
-                <img src="/assets/svg/video-speaker.svg" alt="video-speaker-button">
+                <img class="video-speaker" src="/assets/svg/video-speaker.svg" alt="video-speaker-button">
+                <img class="video-mute" src="/assets/svg/video-mute.svg" alt="video-mute-button" style="display: none;">
               </button>
 
-              <input  class="video-progress video-progress-volume" type="range" value="40" min="0" max="100" step="0.5">
+              <input  class="video-progress video-progress-volume slider-progress" name="volume" type="range" value="1" min="0" max="1" step="0.1">
 
               <button class="video-controls-button video-fullscreen-button">
-                <img src="/assets/svg/video-fullscreen-button.svg" alt="video-fullscreen-button">
+                <img class="video-fullscreen-on" src="/assets/svg/video-fullscreen-button.svg" alt="video-fullscreen-button">
+                <img class="video-fullscreen-off" src="/assets/svg/video-fullscreen_exit.svg" alt="video-fullscreen-button" style="display:none;">
+
               </button>
 
             </div>
@@ -252,23 +257,23 @@
           <div class="video-container-list">
 
             <div class="video-container-item">
-              <iframe class="embed-player" width="500" height="254" loading="lazy" src="https://www.youtube.com/embed/zp1BXPX8jcU"  title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+              <iframe class="embed-player" width="500" height="254" loading="lazy" src="https://www.youtube.com/embed/zp1BXPX8jcU?enablejsapi=1"  title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen e style="display: block;"></iframe>
             </div>
 
             <div class="video-container-item">
-              <iframe class="embed-player" width="500" height="254" loading="lazy" src="https://www.youtube.com/embed/Vi5D6FKhRmo"  title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+              <iframe class="embed-player" width="500" height="254" loading="lazy" src="https://www.youtube.com/embed/Vi5D6FKhRmo?enablejsapi=1"  title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
             </div>
 
             <div class="video-container-item">
-              <iframe class="embed-player" width="500" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+              <iframe class="embed-player" width="500" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY?enablejsapi=1" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="display: block;"></iframe>
             </div>
 
             <div class="video-container-item">
-              <iframe class="embed-player" width="500" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+              <iframe class="embed-player" width="500" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI?enablejsapi=1" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="display: block;"></iframe>
             </div>
 
             <div class="video-container-item">
-              <iframe class="embed-player" width="500" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
+              <iframe class="embed-player" width="500" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE?enablejsapi=1" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;"></iframe>
             </div>
 
           </div>
@@ -671,6 +676,7 @@
 <script src="slider.js"></script>
 <script src="booking.js"></script>
 <script src="compareSlider.js"></script>
+<script src="customPlayer.js"></script>
 
 
 
