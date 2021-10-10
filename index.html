@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/favicon.ico">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
+    <script defer src="compareSlider.js"></script>
 
 </head>
 <body>
@@ -605,8 +608,12 @@
               <p><a href="mailto:info@louvre.fr" style="color: #000000;">mail: info@louvre.fr</a></p>
 
             </div>
-            <div class="contacts-map-content"><img src="/assets/img/contacts/map.jpg" alt="map" style="
-              width: 100%;"></div>
+
+
+
+              <div class="contacts-map-content"><div id="map"></div></div>
+
+
           </div>
         </div>
     </section>
@@ -675,8 +682,8 @@
 
 <script src="slider.js"></script>
 <script src="booking.js"></script>
-<script src="compareSlider.js"></script>
 <script src="customPlayer.js"></script>
+<script src="map.js"></script>
 
 
 

@@ -75,4 +75,5 @@ function initComparisons() {
   }
 }
 
-initComparisons()
+// document.querySelector(.explore-section).addEventListener("load", initComparisons)
+window.addEventListener("load", initComparisons)

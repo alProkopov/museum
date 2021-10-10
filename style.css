@@ -505,8 +505,7 @@ line-height: 38px;
   vertical-align: middle;
 }
 .img-comp-slider {
-  padding: 0;
-  margin: 0;
+
   position: absolute;
 
 
@@ -516,17 +515,13 @@ line-height: 38px;
   /*set the appearance of the slider:*/
 
   background-image: url('/assets/img/explore-slider/exploreSlider.png');
-  background-repeat: no-repeat;
+
   width: 40px;
-  height: 1600px;
+  height: 700px;
   opacity: 0.7;
   /* border-radius: 50%; */
 }
-.explore-slider{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+
 
 
 
@@ -1036,6 +1031,14 @@ line-height: 26px;
 color: #000000;
 padding-bottom: 25px;
 }
+.contacts-map-content{
+  width: 960px;
+    height: 620px;
+}
+#map { position: absolute;
+   right: 0;
+    width: 960px;
+    height: 620px;}
 
 
 footer{

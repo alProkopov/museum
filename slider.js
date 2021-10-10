@@ -4,7 +4,7 @@ $(document).ready(function (){
     appendArrows: $('.arrows'),
     prevArrow: '<button class="slider-arrow slider-arrow-prev slick-prev slick-arrow"><img src="/assets/svg/arrow-prev-dark.svg" alt="prevArrow"></button>',
     nextArrow: '<button class="slider-arrow slider-arrow-next slick-next slick-arrow"><img src="/assets/svg/arrow-next-dark.png" alt="nextArrow"></button>',
-
+    lazyLoad: 'ondemand',
     dots: true,
     // appendDots:$(this).siblings('.slider-buttons-list')
             appendDots:'.slider-buttons-list'
@@ -24,8 +24,8 @@ $('.video-content').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.video-container-list'
-
+  asNavFor: '.video-container-list',
+  lazyLoad: 'ondemand',
 
 
 });
@@ -34,7 +34,7 @@ $('.video-container-list').slick({
   slidesToScroll: 1,
   asNavFor: '.video-content',
   variableWidth: true,
-
+  lazyLoad: 'ondemand',
   // centerMode: true,
   focusOnSelect: true,
 
