@@ -782,8 +782,21 @@ order: 2;
 }
 .gallery-picture{
   transition: 1s;
+  opacity: 0;
+  transform: translateX(50%);
+  transform: translateY(50%);
+}
+
+.gallery-picture.active-pic{
+
+  opacity: 1;
+  transform: translateY(0%);
+  transform: translateX(0%);
+
 
 }
+
+
 
   .gallery-picture-inner-container{
     width: 100%;
