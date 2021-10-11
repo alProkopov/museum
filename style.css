@@ -1363,7 +1363,7 @@ color: #FFFFFF;
 
 .booking-form__date::-webkit-datetime-edit,
 .booking-form__time::-webkit-datetime-edit {
-  opacity: 0;
+  opacity: 1;
 }
 
 .booking-form__date-label, .booking-form__time-label {

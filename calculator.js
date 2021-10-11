@@ -40,16 +40,16 @@
 // ticketTypeItem.forEach(el=>el.addEventListener('click', whatChecked))
 
 
-const button = document.querySelectorAll('.amount-button')
-
+const button = document.querySelectorAll('.amount-button, .entry-ticket__button')
 const inputBasic = document.querySelector('.amount-value.basic')
 const inputSenior = document.querySelector('.amount-value.senior')
-
 const calculator = document.querySelector('.total-calculator')
-
-
-
 const ticketTypeItem = document.querySelectorAll('.ticket-type-radio')
+
+
+//form
+
+// const ticketTypeItem = document.querySelectorAll('.ticket-type-radio')
 
 
 function setLocal(params) {
