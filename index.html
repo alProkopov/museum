@@ -650,10 +650,14 @@
                         booking-form__input-wrapper booking-form__name-wrapper
                       "
                     >
+                      <span class="validity valid-name">Enter from 3 till 15 Ru or En letters</span>
                       <input
-                        class="booking-form__input booking-form__name"
+                        class="booking-form__input booking-form__name booking-form--input"
                         type="text"
                         value="Name"
+                        id='valid-name'
+                        pattern="^[A-Za-zА-Яа-яЁё\s]{3,15}"
+                        maxlength="15"
                       />
                     </div>
                     <div
@@ -661,10 +665,13 @@
                         booking-form__input-wrapper booking-form__email-wrapper
                       "
                     >
+                      <span class="validity valid-email">example: username@example.com</span>
                       <input
-                        class="booking-form__input booking-form__email"
+                        class="booking-form__input booking-form__email booking-form--input"
                         type="email"
+                        id="valid-email"
                         value="E-mail"
+                        pattern="^[\w-]{3,15}@[a-z]{4,}.[a-z]{2,}"
                       />
                     </div>
                     <div
@@ -672,10 +679,14 @@
                         booking-form__input-wrapper booking-form__tel-wrapper
                       "
                     >
+                      <span class="validity valid-tel">example: 11-222 333</span>
                       <input
-                        class="booking-form__input booking-form__tel"
+                        class="booking-form__input booking-form__tel booking-form--input"
                         type="tel"
+                        id="valid-tel"
                         value="Phone"
+                        pattern="^(\d{2,3}[- .]?){1,4}"
+                        
                       />
                     </div>
                     <div
@@ -1329,5 +1340,6 @@
     <script src="booking.js"></script>
     <script src="customPlayer.js"></script>
     <script src="map.js"></script>
+    <script src="validator.js"></script>
   </body>
 </html>

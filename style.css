@@ -2035,3 +2035,18 @@ color: #FFFFFF;
 .slick-list{
   overflow: hidden;
 }
+
+
+.validity {
+  display: none;
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.invalid {
+  border: 2px solid red;
+}
